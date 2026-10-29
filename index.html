@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f4f7fb">
+    <title>TV Power Consumption Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+  </head>
+  <body>
+    <main class="dashboard">
+      <header class="dashboard-header">
+        <div>
+          <p class="eyebrow">ENERGY MONITORING</p>
+          <h1>TV Power Consumption Dashboard</h1>
+          <p class="subtitle">Explore television energy use across time and operating conditions.</p>
+        </div>
+        <span class="status">
+          <span class="status-dot" aria-hidden="true"></span>
+          Power usage overview
+        </span>
+      </header>
+
+      <section class="chart-grid" aria-label="Power consumption charts">
+        <article class="chart-card">
+          <div class="chart-heading">
+            <div>
+              <p class="chart-kicker">RELATIONSHIP</p>
+              <h2>Usage vs. temperature</h2>
+            </div>
+            <span class="chart-type">Scatter plot</span>
+          </div>
+          <div id="scatter-plot" class="chart-area" role="img" aria-label="Scatter plot of TV power consumption"></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-heading">
+            <div>
+              <p class="chart-kicker">OVER TIME</p>
+              <h2>Power consumption trend</h2>
+            </div>
+            <span class="chart-type">Line chart</span>
+          </div>
+          <div id="line-chart" class="chart-area" role="img" aria-label="Line chart of TV power consumption over time"></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-heading">
+            <div>
+              <p class="chart-kicker">COMPARISON</p>
+              <h2>Consumption by state</h2>
+            </div>
+            <span class="chart-type">Bar chart</span>
+          </div>
+          <div id="bar-chart" class="chart-area" role="img" aria-label="Bar chart comparing TV power consumption by state"></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-heading">
+            <div>
+              <p class="chart-kicker">BREAKDOWN</p>
+              <h2>Energy share</h2>
+            </div>
+            <span class="chart-type">Donut chart</span>
+          </div>
+          <div id="donut-chart" class="chart-area" role="img" aria-label="Donut chart showing the TV energy consumption breakdown"></div>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
